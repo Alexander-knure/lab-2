@@ -43,7 +43,6 @@
         очков он заработал, считая количество раковин, лежащих отверстием вверх. Выбросив шесть и более очков, 
         игрок получает право на дополнительный бросок. 
     </div>
-    
     <div id="t1">
         <table>
             <tr>
@@ -99,28 +98,18 @@
     <div id="circle1"><div>
     <div id="circle2"><div>
     <div id="circle3"><div>
-
-
-<!---------------------------------------------------------------------------------------------------->
 <form action="#" class="form">
         <div class="form__field">
-            <input type="text" name="name" placeholder="Имя*" required />
+            <input type="text" name="name" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" required />
+            <span class="form__error">Это должно содержать буквы в формате Андрей</span>
         </div>
         <div class="form__field">
-            <input type="email" name="name" placeholder="E-Mail" />
-            <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
+            <input type="email" name="name" placeholder="E-Mail" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+            <span class="form__error">Это должно содержать E-Mail в формате google@gmail.com</span>
         </div>
         <div class="form__field">
-            <input type="tel" name="name" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" />
-            <span class="form__error">Это поле должно содержать телефон в формате +7 (123) 456-78-90</span>
-        </div>
-        <div class="form__field">
-            <input type="url" name="name" placeholder="Ваш сайт" />
-            <span class="form__error">Это поле должно содержать URL в формате http://mysite.ru</span>
-        </div>
-        <div class="form__field">
-            <input type="number" name="name" placeholder="Ваш рост (см)" min="100" max="250" />
-            <span class="form__error">Ваш рост должен быть не меньше 100 и не больше 250 см</span>
+            <input type="url" name="name" placeholder="Ссылка на соцсеть/сайт" pattern="https?://.+" />
+            <span class="form__error">Это поле должно содержать URL в формате http://google.com</span>
         </div>
         <button type="submit">Отправить</button>
     </form>

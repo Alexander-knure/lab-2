@@ -41,9 +41,9 @@ div.c2 {
     left: 50px;
     background: red;
 }
-/*---------------------------------------*/
+/*--------------Variant 3---------------------*/
 .form {
-    top: 75px;
+    top: 125px;
     left: 75px;
     position: relative;
     display: inline-block;
